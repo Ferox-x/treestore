@@ -1,0 +1,43 @@
+[tool.ruff]
+line-length = 100
+select = [
+    "E",
+    "F",
+    "T20",
+    "UP",
+    "I"
+]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    ".env",
+    ".env_legacy",
+    "migrations",
+    "__init__.py",
+]
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+target-version = "py311"
+
+[tool.ruff.mccabe]
+max-complexity = 10
+
+[tool.ruff.format]
+quote-style = 'single'
+
